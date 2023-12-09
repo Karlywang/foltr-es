@@ -1,3 +1,6 @@
+.DS_Store
+.idea
+
 data/MQ2007/
 data/MQ2008/
 cache/*.pkl
