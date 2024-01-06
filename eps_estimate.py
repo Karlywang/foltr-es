@@ -55,7 +55,7 @@ def get_distribution(relevance_labels: List[float], click_model: CcmClickModel) 
 
 def enumerate_distributions(depth: int, click_model: CcmClickModel, p: float) -> List[np.ndarray]:
     """
-    We iterate over all possible placements of relevance scores {0, 1, 3}
+    We iterate over all possible placements of relevance scores {0, 1, 2}
     over ranked lists of depth `depth` (3**`depth` of them), get the prob. distribution of first clicks for those
     ranked lists. As there's a one-to-one mapping between the first click and the value of MaxRR, we treat those
     distributions as distributions of MaxRR metric values. Next, we apply the privatization noise and iterate over all
